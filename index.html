@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Tasty Food Website Landling Page</title>
+</head>
+<body>
+    <!----- The Navigation and Menu ----->
+    <header>
+        <a href="#" class="logo">
+            <ion-icon name="restaurant-outline"></ion-icon>
+        </a>
+        <div class="search">
+            <ion-icon onclick="toggleSearch();" name="search-outline"></ion-icon>
+            <input type="text" placeholder="SEARCH HERE..."/>
+        </div>
+        <div class="bar">
+            <ul class="nav">
+                <li><a href="#">Breakfast</a></li>
+                <li><a href="">Launch</a></li>
+                <li><a href="">Dinner</a></li>
+            </ul>
+            <div class="check-out">
+                <ion-icon name="bag-outline"></ion-icon>
+                <span class="number">4</span>
+            </div>
+            <a class="menu" onClick="toggleMenu();" href="#">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </a>
+        </div>
+        <ul class="nav-mobile">
+            <li><a href="#">Breakfast</a></li>
+            <li><a href="">Launch</a></li>
+            <li><a href="">Dinner</a></li>
+        </ul>
+    </header>
+    <!-- Banner Section -->
+    <div class="banner">
+        <div class="content">
+            <h1>Food <ion-icon name="heart"></ion-icon></h1>
+            <h2>Lovers</h2>
+        </div>
+        <div class="imgBox">
+            <div class="food">
+                <img src="./images/1.jpeg" alt="" class="food-img">
+            </div>
+            <div class="description">
+                <h3>Lorem ipsum</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non volutpat turpis. Sed odio neque, efficitur ut quam finibus, pulvinar aliquet magna. Aenean dapibus eros non mauris auctor, ut dignissim diam ullamcorper. Curabitur bibendum felis semper diam hendrerit fermentum. Cras ac porta diam.
+                </p>
+                <ul class="download">
+                    <li><img src="./images/apple.png" alt=""></li>
+                    <li><img src="./images/google.png" alt=""></li>
+                </ul>
+                <span class="price">Rs. 100/-</span>
+            </div>
+        </div>
+        <!-- Main Button -->
+        <a href="#" class="btn" onclick="toggleFlip();">
+            Learn More<ion-icon name="arrow-redo-circle-outline"></ion-icon>
+        </a>
+        <!-- Order Button -->
+        <span class="order"><ion-icon name="bag-add-outline"></ion-icon></span>
+        <div class="selections">
+            <div class="circle">
+                <div class="options one" onclick="changeImg('1.jpeg');">
+                    <img src="./images/1.jpeg" alt="">
+                </div>
+                <div class="options two" onclick="changeImg('2.jpeg');">
+                    <img src="./images/2.jpeg" alt="">
+                </div>
+                <div class="options three" onclick="changeImg('3.jpeg');">
+                    <img src="./images/3.jpeg" alt="">
+                </div>
+            </div>
+            <h1>Healthy Life</h1>
+        </div>
+    </div>
+    <!-- social icon -->
+    <ul class="sci">
+        <li><ion-icon name="logo-facebook"></ion-icon></li>
+        <li><ion-icon name="logo-twitter"></ion-icon></li>
+        <li><ion-icon name="logo-instagram"></ion-icon></li>
+        <li><ion-icon name="logo-youtube"></ion-icon></li>
+    </ul>
+    <!-- footer section -->
+    <footer>
+        <div class="copyright">
+            &copy; Copyright <strong><span>Shruti Gaikwad.</span> All Rights Reserved</strong>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
